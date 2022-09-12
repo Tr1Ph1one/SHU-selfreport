@@ -27,7 +27,7 @@ jobs:
           DISABLE_PULL_REMOTE: ${{ secrets.DISABLE_PULL_REMOTE }}
         if: env.DISABLE_PULL_REMOTE == ''
         run: |
-          wget -O remote.zip https://github.com/BlueFisher/SHU-selfreport/archive/refs/heads/master.zip
+          wget -O remote.zip https://github.com/bear-zd/SHU-selfreport/archive/refs/heads/master.zip
           unzip remote.zip
 
       - name: Report Without OpenVPN
